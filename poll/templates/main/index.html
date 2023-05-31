@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% include 'navbar.html' %}
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <div class="collection">
+         <h4>Popular questions</h4>
+      {% for question in question_list%}
+    <a href="#!" class="collection-item">
+        {{question.content}}
+    </a>
+    {% endfor %}
+    </div>
+</div>
+</div>
+
+
+    <div class="row">
+        <div class="col-6">
+            
+    
+    
+</div>
+</div>
+  </div>
+
+{% endblock%}
